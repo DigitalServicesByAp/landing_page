@@ -70,7 +70,7 @@
       font-family: 'Playfair Display', serif;
       font-size: 2.4rem;
       color: #ffd700;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
       letter-spacing: 2px;
     }
 
@@ -78,7 +78,7 @@
       font-size: 1.45rem;
       font-weight: 700;
       color: #ffea80;
-      margin: 16px 0 24px;
+      margin: 12px 0 24px;
       letter-spacing: 1.5px;
     }
 
@@ -86,7 +86,7 @@
       display: flex;
       flex-direction: column;
       gap: 14px;
-      margin: 24px 0;
+      margin: 20px 0 28px;   /* increased bottom margin a bit */
     }
 
     .feature {
@@ -98,35 +98,35 @@
       font-size: 1.05rem;
     }
 
+    .whatsapp-btn {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      font-size: 1.35rem;
+      font-weight: 700;
+      padding: 18px 50px;
+      border-radius: 50px;
+      text-decoration: none;
+      margin: 12px 0 32px;   /* reduced top margin, increased bottom for spacing */
+      box-shadow: 0 8px 25px rgba(37,213,102,0.5);
+      transition: all 0.2s;
+    }
+
+    .whatsapp-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(37,213,102,0.65);
+    }
+
     .entry-fee {
       background: #ffd700;
       color: #000;
       font-size: 1.9rem;
       font-weight: 800;
       padding: 18px 0;
-      margin: 28px 0;
+      margin: 20px 0 28px;
       border-radius: 12px;
       box-shadow: 0 8px 25px rgba(255,215,0,0.5);
       letter-spacing: 1px;
-    }
-
-    .whatsapp-btn {
-      display: inline-block;
-      background: #25D366;
-      color: white;
-      font-size: 1.3rem;
-      font-weight: 700;
-      padding: 18px 40px;
-      border-radius: 50px;
-      text-decoration: none;
-      margin: 20px 0 30px;
-      box-shadow: 0 8px 25px rgba(37,213,102,0.45);
-      transition: all 0.2s;
-    }
-
-    .whatsapp-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 35px rgba(37,213,102,0.6);
     }
 
     .bonus {
@@ -209,12 +209,13 @@
       <div class="feature">✅ SAFE AND BALANCED</div>
     </div>
 
-    <div class="entry-fee">ENTRY ₹200</div>
-
-    <!-- Updated with your QR link -->
+    <!-- WHATSAPP BUTTON MOVED UP HERE -->
     <a href="https://wa.me/qr/TKCJUSBEN44LN1" class="whatsapp-btn">
       JOIN ON WHATSAPP
     </a>
+
+    <div class="entry-fee">ENTRY ₹200</div>
+
   </div>
 
   <div class="bonus">10% WELCOME BONUS</div>
@@ -222,7 +223,6 @@
 
   <div class="arrows">↓ ↓ ↓</div>
 
-  <!-- Also updated here -->
   <a href="https://wa.me/qr/TKCJUSBEN44LN1" class="get-id">
     GET YOUR ID NOW
   </a>
